@@ -47,12 +47,15 @@
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="t3O-wL-VQ6">
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="t3O-wL-VQ6">
                                                                 <rect key="frame" x="130" y="0.0" width="254" height="31"/>
                                                                 <color key="tintColor" red="0.025072689700000001" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="IoD-SG-3E4"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="sliderChanger" destination="BYZ-38-t0r" eventType="valueChanged" id="OLX-am-ARS"/>
+                                                                </connections>
                                                             </slider>
                                                         </subviews>
                                                     </stackView>
@@ -71,11 +74,14 @@
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Oay-UE-vIQ">
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Oay-UE-vIQ">
                                                                 <rect key="frame" x="130" y="0.0" width="254" height="31"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="y82-8S-6WG"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="sliderChanger" destination="BYZ-38-t0r" eventType="valueChanged" id="Zyd-zf-PLF"/>
+                                                                </connections>
                                                             </slider>
                                                         </subviews>
                                                     </stackView>
@@ -94,12 +100,15 @@
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4Y5-cC-HLy">
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4Y5-cC-HLy">
                                                                 <rect key="frame" x="130" y="0.0" width="254" height="31"/>
                                                                 <color key="tintColor" red="1" green="0.0" blue="0.01208707165" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="Umy-fo-270"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="sliderChanger" destination="BYZ-38-t0r" eventType="valueChanged" id="hDG-Sh-Obc"/>
+                                                                </connections>
                                                             </slider>
                                                         </subviews>
                                                     </stackView>
@@ -126,6 +135,15 @@
                             <constraint firstItem="Msj-aK-GX5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="zEW-jr-cEz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueSlider" destination="Oay-UE-vIQ" id="Lse-WX-TWF"/>
+                        <outlet property="blueSliderValue" destination="sDs-25-vCh" id="222-rd-jba"/>
+                        <outlet property="greenSlider" destination="t3O-wL-VQ6" id="cPl-OB-EUr"/>
+                        <outlet property="greenSliderValue" destination="MCU-Sw-3YU" id="ELe-uK-OuK"/>
+                        <outlet property="mainLabel" destination="CrV-dV-DHs" id="dkY-62-FJS"/>
+                        <outlet property="redSlider" destination="4Y5-cC-HLy" id="XuY-GD-jfk"/>
+                        <outlet property="redSliderValue" destination="QMs-c8-HHY" id="mXu-vF-Edu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

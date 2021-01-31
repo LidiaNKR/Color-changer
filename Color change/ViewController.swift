@@ -9,11 +9,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var mainLabel: UIView!
+    @IBOutlet var greenSlider: UISlider!
+    @IBOutlet var blueSlider: UISlider!
+    @IBOutlet var redSlider: UISlider!
+    @IBOutlet var greenSliderValue: UILabel!
+    @IBOutlet var blueSliderValue: UILabel!
+    @IBOutlet var redSliderValue: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        greenSliderValue.text = String(greenSlider.value)
+        blueSliderValue.text = String(blueSlider.value)
+        redSliderValue.text = String(redSlider.value)
     }
-
-
+    
+    func changerColor() {
+        mainLabel.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
+    }
+    
+    @IBAction func sliderChanger() {
+        changerColor()
+    }
 }
-
