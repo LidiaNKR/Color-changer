@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet var mainLabel: UIView!
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
@@ -19,17 +19,22 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        greenSliderValue.text = String(greenSlider.value)
-        blueSliderValue.text = String(blueSlider.value)
-        redSliderValue.text = String(redSlider.value)
     }
     
     func changerColor() {
         mainLabel.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
     }
     
-    @IBAction func sliderChanger() {
+    @IBAction func sliderChsnger() {
+    greenSliderValue.text = String(format: "%.2f",
+                                       greenSlider.value)
+        blueSliderValue.text = String(format: "%.2f",
+                                      blueSlider.value)
+        redSliderValue.text = String(format: "%.2f",
+                                     redSlider.value)
+    }
+    
+    @IBAction func colorChanger() {
         changerColor()
     }
 }
