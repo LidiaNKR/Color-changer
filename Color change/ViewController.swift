@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // MARK: - IB Outlets
     @IBOutlet var mainLabel: UIView!
    
     @IBOutlet var redSlider: UISlider!
@@ -23,7 +24,7 @@ class ViewController: UIViewController {
     @IBOutlet var greenColorValueTextField: UITextField!
     @IBOutlet var blueColorValueTextField: UITextField!
     
-    
+    // MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         mainLabel.layer.cornerRadius = 10
@@ -31,11 +32,19 @@ class ViewController: UIViewController {
         redSlider.minimumTrackTintColor = .red
         greenSlider.minimumTrackTintColor = .green
         
+        setValue(for: redSliderValueLabel, greenSliderValueLabel, blueSliderValueLabel)
+        
         changerColor()
         
-        setValue(for: redSliderValueLabel, greenSliderValueLabel, blueSliderValueLabel)
+        addDoneButtonOnKeyboard()
     }
     
+    // MARK: Navigation
+    @IBAction func doneBittonPressed() {
+        dismiss(animated: true)
+    }
+    
+    // MARK: IBActions
     @IBAction func sliderChanger(_ sender: UISlider) {
         changerColor()
         
@@ -45,12 +54,6 @@ class ViewController: UIViewController {
         case 2: blueSliderValueLabel.text = string(from: sender)
         default: break
         }
-        
-    }
-    
-    
-    @IBAction func doneBittonPressed() {
-        dismiss(animated: true)
     }
     
     private func changerColor() {
@@ -60,6 +63,7 @@ class ViewController: UIViewController {
                                             alpha: 1)
     }
     
+    // MARK: Work with labels and textFields
     private func setValue(for labels: UILabel...) {
         labels.forEach { label in
             switch label.tag {
@@ -73,5 +77,31 @@ class ViewController: UIViewController {
     
     private func string(from slider: UISlider) -> String {
         String(format: "%.2f", slider.value)
+    }
+    
+    // MARK: - Work with keyboard
+    private func addDoneButtonOnKeyboard() {
+        let doneToolBar = UIToolbar()
+
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+        let done = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(self.doneButtonAction))
+
+        doneToolBar.items = [flexSpace, done]
+        doneToolBar.sizeToFit()
+
+        redColorValueTextField.inputAccessoryView = doneToolBar
+        greenColorValueTextField.inputAccessoryView = doneToolBar
+        blueColorValueTextField.inputAccessoryView = doneToolBar
+    }
+
+    @objc func doneButtonAction() {
+        view.endEditing(true)
+    }
+    
+}
+extension ViewController: UITextFieldDelegate {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
 }

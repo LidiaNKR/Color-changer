@@ -63,13 +63,13 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDs-25-vCh">
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDs-25-vCh">
                                                 <rect key="frame" x="0.0" y="59" width="30" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMs-c8-HHY">
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMs-c8-HHY">
                                                 <rect key="frame" x="0.0" y="107" width="30" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -87,20 +87,20 @@
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4Y5-cC-HLy">
                                                 <rect key="frame" x="-2" y="0.0" width="181" height="31"/>
                                                 <connections>
-                                                    <action selector="sliderChanger:" destination="BYZ-38-t0r" eventType="valueChanged" id="Whn-BV-Gcr"/>
+                                                    <action selector="sliderChanger:" destination="BYZ-38-t0r" eventType="valueChanged" id="KJG-bW-6Zw"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="t3O-wL-VQ6">
                                                 <rect key="frame" x="-2" y="50" width="181" height="31"/>
                                                 <color key="tintColor" red="0.025072689700000001" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <connections>
-                                                    <action selector="sliderChanger:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ett-gP-ioO"/>
+                                                    <action selector="sliderChanger:" destination="BYZ-38-t0r" eventType="valueChanged" id="Z6U-Mt-MC0"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Oay-UE-vIQ">
                                                 <rect key="frame" x="-2" y="100" width="181" height="31"/>
                                                 <connections>
-                                                    <action selector="sliderChanger:" destination="BYZ-38-t0r" eventType="valueChanged" id="niF-zJ-ocN"/>
+                                                    <action selector="sliderChanger:" destination="BYZ-38-t0r" eventType="valueChanged" id="rAx-jd-yHS"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
