@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Color_change" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SettingsViewController" customModule="Color_change" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,20 +87,20 @@
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4Y5-cC-HLy">
                                                 <rect key="frame" x="-2" y="0.0" width="181" height="31"/>
                                                 <connections>
-                                                    <action selector="sliderChanger:" destination="BYZ-38-t0r" eventType="valueChanged" id="KJG-bW-6Zw"/>
+                                                    <action selector="RGBChanger:" destination="BYZ-38-t0r" eventType="valueChanged" id="esK-ba-fNJ"/>
                                                 </connections>
                                             </slider>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="t3O-wL-VQ6">
+                                            <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="t3O-wL-VQ6">
                                                 <rect key="frame" x="-2" y="50" width="181" height="31"/>
                                                 <color key="tintColor" red="0.025072689700000001" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <connections>
-                                                    <action selector="sliderChanger:" destination="BYZ-38-t0r" eventType="valueChanged" id="Z6U-Mt-MC0"/>
+                                                    <action selector="RGBChanger:" destination="BYZ-38-t0r" eventType="valueChanged" id="jRm-w7-cc8"/>
                                                 </connections>
                                             </slider>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Oay-UE-vIQ">
+                                            <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Oay-UE-vIQ">
                                                 <rect key="frame" x="-2" y="100" width="181" height="31"/>
                                                 <connections>
-                                                    <action selector="sliderChanger:" destination="BYZ-38-t0r" eventType="valueChanged" id="rAx-jd-yHS"/>
+                                                    <action selector="RGBChanger:" destination="BYZ-38-t0r" eventType="valueChanged" id="3Ed-UU-7cw"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
@@ -112,16 +112,25 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                                <connections>
+                                                    <action selector="inputValidation" destination="BYZ-38-t0r" eventType="editingDidEnd" id="c88-aO-GCe"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gQ9-yy-Rb2">
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gQ9-yy-Rb2">
                                                 <rect key="frame" x="0.0" y="51" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                                <connections>
+                                                    <action selector="inputValidation" destination="BYZ-38-t0r" eventType="editingDidEnd" id="eO7-1A-Ozn"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ium-3r-9xO">
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ium-3r-9xO">
                                                 <rect key="frame" x="0.0" y="102" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                                <connections>
+                                                    <action selector="inputValidation" destination="BYZ-38-t0r" eventType="editingDidEnd" id="sRL-Sg-9KU"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -137,7 +146,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
-                                    <action selector="doneBittonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="p3q-a4-BGd"/>
+                                    <action selector="doneBittonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6DQ-Ol-6o2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -190,7 +199,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" id="Fko-bD-WyX">
                             <imageReference key="image" image="square.and.pencil" catalog="system" symbolScale="large"/>
                             <connections>
-                                <segue destination="2Bb-5m-SfR" kind="presentation" modalPresentationStyle="fullScreen" id="24z-Ne-3yf"/>
+                                <segue destination="2Bb-5m-SfR" kind="presentation" identifier="" modalPresentationStyle="fullScreen" id="24z-Ne-3yf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		F8594B2125C5A02900AB2183 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8594B2025C5A02900AB2183 /* AppDelegate.swift */; };
 		F8594B2325C5A02900AB2183 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8594B2225C5A02900AB2183 /* SceneDelegate.swift */; };
-		F8594B2525C5A02900AB2183 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8594B2425C5A02900AB2183 /* ViewController.swift */; };
+		F8594B2525C5A02900AB2183 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8594B2425C5A02900AB2183 /* SettingsViewController.swift */; };
 		F8594B2825C5A02900AB2183 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8594B2625C5A02900AB2183 /* Main.storyboard */; };
 		F8594B2A25C5A02A00AB2183 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8594B2925C5A02A00AB2183 /* Assets.xcassets */; };
 		F8594B2D25C5A02A00AB2183 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8594B2B25C5A02A00AB2183 /* LaunchScreen.storyboard */; };
+		F869550B25D9E416009DBDD5 /* RGBValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = F869550A25D9E416009DBDD5 /* RGBValues.swift */; };
 		F8ED4FA625D926FE00A1C7E0 /* ColorBackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ED4FA525D926FE00A1C7E0 /* ColorBackgroundViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +21,12 @@
 		F8594B1D25C5A02900AB2183 /* Color change.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Color change.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8594B2025C5A02900AB2183 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8594B2225C5A02900AB2183 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F8594B2425C5A02900AB2183 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8594B2425C5A02900AB2183 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F8594B2725C5A02900AB2183 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8594B2925C5A02A00AB2183 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8594B2C25C5A02A00AB2183 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8594B2E25C5A02A00AB2183 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F869550A25D9E416009DBDD5 /* RGBValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBValues.swift; sourceTree = "<group>"; };
 		F8ED4FA525D926FE00A1C7E0 /* ColorBackgroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBackgroundViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,7 +62,8 @@
 			children = (
 				F8594B2025C5A02900AB2183 /* AppDelegate.swift */,
 				F8594B2225C5A02900AB2183 /* SceneDelegate.swift */,
-				F8594B2425C5A02900AB2183 /* ViewController.swift */,
+				F8594B2425C5A02900AB2183 /* SettingsViewController.swift */,
+				F869550A25D9E416009DBDD5 /* RGBValues.swift */,
 				F8594B2625C5A02900AB2183 /* Main.storyboard */,
 				F8ED4FA525D926FE00A1C7E0 /* ColorBackgroundViewController.swift */,
 				F8594B2925C5A02A00AB2183 /* Assets.xcassets */,
@@ -141,7 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8ED4FA625D926FE00A1C7E0 /* ColorBackgroundViewController.swift in Sources */,
-				F8594B2525C5A02900AB2183 /* ViewController.swift in Sources */,
+				F8594B2525C5A02900AB2183 /* SettingsViewController.swift in Sources */,
+				F869550B25D9E416009DBDD5 /* RGBValues.swift in Sources */,
 				F8594B2125C5A02900AB2183 /* AppDelegate.swift in Sources */,
 				F8594B2325C5A02900AB2183 /* SceneDelegate.swift in Sources */,
 			);
