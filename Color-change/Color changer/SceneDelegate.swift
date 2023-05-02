@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  Color change
+//  Color changer
 //
 //  Created by Лидия Ладанюк on 30.01.2021.
 //

@@ -1,6 +1,6 @@
 //
 //  ColorViewController.swift
-//  Color change
+//  Color changer
 //
 //  Created by Лидия Ладанюк on 14.02.2021.
 //

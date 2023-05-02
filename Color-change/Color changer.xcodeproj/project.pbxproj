@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F8594B1D25C5A02900AB2183 /* Color change.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Color change.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8594B1D25C5A02900AB2183 /* Color changer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Color changer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8594B2025C5A02900AB2183 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8594B2225C5A02900AB2183 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F8594B2425C5A02900AB2183 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		F8594B1425C5A02900AB2183 = {
 			isa = PBXGroup;
 			children = (
-				F8594B1F25C5A02900AB2183 /* Color change */,
+				F8594B1F25C5A02900AB2183 /* Color changer */,
 				F8594B1E25C5A02900AB2183 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,12 +50,12 @@
 		F8594B1E25C5A02900AB2183 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F8594B1D25C5A02900AB2183 /* Color change.app */,
+				F8594B1D25C5A02900AB2183 /* Color changer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F8594B1F25C5A02900AB2183 /* Color change */ = {
+		F8594B1F25C5A02900AB2183 /* Color changer */ = {
 			isa = PBXGroup;
 			children = (
 				F8594B2025C5A02900AB2183 /* AppDelegate.swift */,
@@ -67,15 +67,15 @@
 				F8594B2B25C5A02A00AB2183 /* LaunchScreen.storyboard */,
 				F8594B2E25C5A02A00AB2183 /* Info.plist */,
 			);
-			path = "Color change";
+			path = "Color changer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F8594B1C25C5A02900AB2183 /* Color change */ = {
+		F8594B1C25C5A02900AB2183 /* Color changer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F8594B3125C5A02A00AB2183 /* Build configuration list for PBXNativeTarget "Color change" */;
+			buildConfigurationList = F8594B3125C5A02A00AB2183 /* Build configuration list for PBXNativeTarget "Color changer" */;
 			buildPhases = (
 				F8594B1925C5A02900AB2183 /* Sources */,
 				F8594B1A25C5A02900AB2183 /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = "Color change";
+			name = "Color changer";
 			productName = "Color change";
-			productReference = F8594B1D25C5A02900AB2183 /* Color change.app */;
+			productReference = F8594B1D25C5A02900AB2183 /* Color changer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +104,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F8594B1825C5A02900AB2183 /* Build configuration list for PBXProject "Color change" */;
+			buildConfigurationList = F8594B1825C5A02900AB2183 /* Build configuration list for PBXProject "Color changer" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,7 +117,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F8594B1C25C5A02900AB2183 /* Color change */,
+				F8594B1C25C5A02900AB2183 /* Color changer */,
 			);
 		};
 /* End PBXProject section */
@@ -291,13 +291,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69V683996A;
-				INFOPLIST_FILE = "Color change/Info.plist";
+				INFOPLIST_FILE = "Color changer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "My.Color-change";
+				PRODUCT_BUNDLE_IDENTIFIER = "My.Color-changer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -310,13 +310,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69V683996A;
-				INFOPLIST_FILE = "Color change/Info.plist";
+				INFOPLIST_FILE = "Color changer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "My.Color-change";
+				PRODUCT_BUNDLE_IDENTIFIER = "My.Color-changer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -326,7 +326,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F8594B1825C5A02900AB2183 /* Build configuration list for PBXProject "Color change" */ = {
+		F8594B1825C5A02900AB2183 /* Build configuration list for PBXProject "Color changer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8594B2F25C5A02A00AB2183 /* Debug */,
@@ -335,7 +335,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F8594B3125C5A02A00AB2183 /* Build configuration list for PBXNativeTarget "Color change" */ = {
+		F8594B3125C5A02A00AB2183 /* Build configuration list for PBXNativeTarget "Color changer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8594B3225C5A02A00AB2183 /* Debug */,
